@@ -49,6 +49,7 @@ function amazonMusicRuntime(busDuration, songDurations) {
                 maxLength = Math.max(Math.max(maxLength, songDurations[i]), songDurations[j])
                 // Checking if the current pair includes the longest song
                 if(maxLength === songDurations[i] || maxLength === songDurations[j])
+                    // Turns the indexes of the expected array into the index values where the maxLength is found
                     expected[0] = i
                     expected[1] = j
             }
